@@ -12,6 +12,7 @@ before_script:
  #
 
 script: 
+ - ls
  - choco install cygwin
  - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make
  - export PATH=/c/tools/cygwin/bin:$PATH
