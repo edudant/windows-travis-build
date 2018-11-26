@@ -14,10 +14,10 @@ before_script:
 script: 
  - choco install cygwin
  - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make
+ - export PATH=/c/tools/cygwin/bin:$PATH
  - echo $PATH
- - export PATH=C:\\tools\\cygwin\\bin:$PATH
- - echo $PATH
- - C:\\tools\\cygwin\\bin\\bash run.sh
+ - pwd
+ - /c/tools/cygwin/bin/bash run.sh
  # - choco install cyg-get
  # - cyg-get make
  # - ls /
