@@ -13,7 +13,7 @@ script:
  - choco install cygwin
  - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make,unzip
  #- powershell -Command "C:\tools\cygwin\bin\bash.exe -c 'echo hello'"
- - git config --system core.eol lf
+ #- git config --system core.eol lf
  - powershell -Command "C:\tools\cygwin\bin\bash.exe -c './run.sh'" 
  
  
