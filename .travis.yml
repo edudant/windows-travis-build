@@ -13,16 +13,17 @@ before_script:
 
 script: 
  - choco install cygwin
- - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make
+ - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make,bash
  - export PATH=/c/tools/cygwin/bin:$PATH
  - echo $PATH
- - ls -al /c/tools/cygwin/bin/bash
+ - ls -al /c/tools/cygwin/bin/sh
  - ls -al C:\\tools\\cygwin\\bin\\bash
+ - ls -al C:\\tools\\cygwin\\bin\\sh
  - ls -al C:\\Users\\travis\\build\\edudant\\windows-travis-buil\\run.sh
  - ls -al /c/Users/travis/build/edudant/windows-travis-build/run.sh
- - C:\\tools\\cygwin\\bin\\bash run.sh
- - C:\\tools\\cygwin\\bin\\bash C:\\Users\\travis\\build\\edudant\\windows-travis-buil\\run.sh
- - C:\\tools\\cygwin\\bin\\bash /c/Users/travis/build/edudant/windows-travis-build/run.sh
+ - C:\\tools\\cygwin\\bin\\sh run.sh
+ - C:\\tools\\cygwin\\bin\\sh C:\\Users\\travis\\build\\edudant\\windows-travis-buil\\run.sh
+ - C:\\tools\\cygwin\\bin\\sh /c/Users/travis/build/edudant/windows-travis-build/run.sh
  # - choco install cyg-get
  # - cyg-get make
  # - ls /
