@@ -11,6 +11,7 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 cd openjdk-build
 export LOG=info
-git config --global core.longpath
+git config --system core.longpaths true
+git config --global core.autocrlf false
 ./makejdk-any-platform.sh jdk11u
 
