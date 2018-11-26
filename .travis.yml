@@ -5,16 +5,15 @@ env:
  - MSBUILD_PATH="c:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin"
  
 before_script:
- # - refreshenv
- # - unset -v _JAVA_OPTIONS
- # - git config --system core.longpaths true
- # - git clone --depth 1 https://github.com/TravaOpenJDK/openjdk-build.git
- #
-
+ - refreshenv
+ - unset -v _JAVA_OPTIONS
+ - git config --system core.longpaths true
+ - git clone --depth 1 https://github.com/TravaOpenJDK/openjdk-build.git
+ 
 script: 
  - choco install cygwin
- - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make,bash
- - powershell -Command "C:\tools\cygwin\bin\bash.exe -c 'echo hello'"
+ - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make
+ #- powershell -Command "C:\tools\cygwin\bin\bash.exe -c 'echo hello'"
  - powershell -Command "C:\tools\cygwin\bin\bash.exe -c './run.sh'" 
  
  
