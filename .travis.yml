@@ -13,6 +13,7 @@ before_script:
 
 script: 
  - choco install cygwin
+ - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make,bash
  - powershell -Command "C:\tools\cygwin\bin\bash.exe -c 'echo hello'"
  - powershell -Command "C:\tools\cygwin\bin\bash.exe -c './run.sh'" 
  
