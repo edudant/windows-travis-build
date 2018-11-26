@@ -13,5 +13,7 @@ before_script:
 
 script: 
  - choco install cygwin
- - ls C:\tools\cygwin
- - make
+ - ls /
+ - C:\\ProgramData\\chocolatey\\bin\\Cygwin.exe
+ - ls C:\\tools\\cygwin
+ - make --version
