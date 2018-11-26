@@ -11,6 +11,6 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 cd ./openjdk-build
 export LOG=info
-echo "GIT:"$(which git)
+which git
 ./makejdk-any-platform.sh jdk11u
 
