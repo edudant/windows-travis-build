@@ -10,6 +10,7 @@ export JAVA_HOME=$(cd "${target}"; pwd)
 export PATH=${JAVA_HOME}/bin:$PATH 
 
 unset -v CC
+unset -v CXX
 cd ./openjdk-build
 export LOG=info
 ./makejdk-any-platform.sh jdk11u
