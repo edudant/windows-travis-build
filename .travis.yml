@@ -7,7 +7,7 @@ env:
 before_script:
  - unset -v _JAVA_OPTIONS
  - git config --system core.longpaths true
- - git config --global text eol=lf
+ - git config --system core.eol lf
  - git clone --depth 1 https://github.com/TravaOpenJDK/openjdk-build.git
  
 script: 
