@@ -18,7 +18,8 @@ script:
  - export PATH=/c/tools/cygwin/bin:$PATH
  - echo $PATH
  - pwd
- - /c/tools/cygwin/bin/bash /cygdrive/c/Users/travis/build/edudant/windows-travis-build/run.sh
+ - /c/tools/cygwin/bin/bash ls
+ - /c/tools/cygwin/bin/bash /c/Users/travis/build/edudant/windows-travis-build/run.sh
  # - choco install cyg-get
  # - cyg-get make
  # - ls /
