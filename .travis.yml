@@ -6,7 +6,7 @@ env:
  
 before_script:
  - unset -v _JAVA_OPTIONS
- - echo "GIT:"$(which git)
+ - which git
  - git config --system core.longpaths true
  - git config --global core.autocrlf false
  # clone from skybber patched
