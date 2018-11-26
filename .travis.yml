@@ -13,8 +13,9 @@ before_script:
 
 script: 
  - choco install cygwin
- - C:\\tools\\cygwin\\bin\\sh -c "echo hello"
- - C:\\tools\\cygwin\\bin\\sh
+ - C:\\tools\\cygwin\\bin\\bash
+ - C:\\tools\\cygwin\\bin\\bash -c "echo hello"
+ 
  
 #- C:\\tools\\cygwin\\cygwinsetup.exe -q -P make,bash
 # - export LIBRARY_PATH="/c/tools/cygwin/bin"
