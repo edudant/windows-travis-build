@@ -13,9 +13,10 @@ before_script:
 
 script: 
  - choco install cygwin
- - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make,bash
- # - export LIBRARY_PATH="/c/tools/cygwin/bin;$LIBRARY_PATH"
- # - export PATH=/c/tools/cygwin/bin:$PATH
+ #- C:\\tools\\cygwin\\cygwinsetup.exe -q -P make,bash
+ - export LIBRARY_PATH="/c/tools/cygwin/bin;$LIBRARY_PATH"
+ - export LD_LIBRARY_PATH="/c/tools/cygwin/bin;$LIBRARY_PATH"
+ - export PATH=/c/tools/cygwin/bin:$PATH
  - C:\\tools\\cygwin\\bin\\sh -c "echo hello"
  - C:\\tools\\cygwin\\bin\\sh -c "cat run.sh"
  - C:\\tools\\cygwin\\bin\\sh -c "/c/Users/travis/build/edudant/windows-travis-build/run.sh"
