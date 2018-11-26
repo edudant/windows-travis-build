@@ -7,13 +7,13 @@ env:
 before_script:
  - unset -v _JAVA_OPTIONS
  - git config --system core.longpaths true
- - git config --system core.eol lf
  - git clone --depth 1 https://github.com/TravaOpenJDK/openjdk-build.git
  
 script: 
  - choco install cygwin
  - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make,unzip
  #- powershell -Command "C:\tools\cygwin\bin\bash.exe -c 'echo hello'"
+ - git config --system core.eol lf
  - powershell -Command "C:\tools\cygwin\bin\bash.exe -c './run.sh'" 
  
  
