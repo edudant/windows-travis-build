@@ -13,6 +13,9 @@ git config --system core.longpaths true
 git config --global core.autocrlf false
 mv openjdk-build /openjdk-build
 cd /openjdk-build
+mkdir /openjdk-build/workspace/
+mkdir /openjdk-build/workspace/build/
+mkdir /openjdk-build/workspace/build/src
 export LOG=info
 ./makejdk-any-platform.sh jdk11u
 
