@@ -9,6 +9,7 @@ unzip -q ${zip_file}
 export JAVA_HOME=$(cd "${target}"; pwd)
 export PATH=${JAVA_HOME}/bin:$PATH 
 
+cd ./openjdk-build
 export LOG=info
 ./makejdk-any-platform.sh jdk11u
 
