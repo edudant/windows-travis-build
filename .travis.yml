@@ -13,4 +13,5 @@ before_script:
 
 script: 
  - choco install cygwin
- - make --version
+ - ls C:\tools\cygwin
+ - make
