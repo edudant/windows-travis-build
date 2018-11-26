@@ -14,7 +14,7 @@ before_script:
 script: 
  - choco install cygwin
  - ls C:\\tools\\cygwin
- - C:\\tools\\cygwin\\setup-x86.exe -q -P 
+ - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make
  # - choco install cyg-get
  # - cyg-get make
  # - ls /
