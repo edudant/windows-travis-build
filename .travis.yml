@@ -16,18 +16,12 @@ script:
  - C:\\tools\\cygwin\\cygwinsetup.exe -q -P make,bash
  # - export LIBRARY_PATH="/c/tools/cygwin/bin;$LIBRARY_PATH"
  # - export PATH=/c/tools/cygwin/bin:$PATH
- - ldd $(which ls)
- #- echo $PATH
- - ls -al /c/tools/cygwin/bin/sh
- - ls -al C:\\tools\\cygwin\\bin\\bash
- - ls -al C:\\tools\\cygwin\\bin\\sh
- - ls -al C:\\Users\\travis\\build\\edudant\\windows-travis-buil\\run.sh
- - ls -al /c/Users/travis/build/edudant/windows-travis-build/run.sh
- - C:\\tools\\cygwin\\bin\\sh run.sh
- - C:\\tools\\cygwin\\bin\\sh C:\\Users\\travis\\build\\edudant\\windows-travis-buil\\run.sh
+ - C:\\tools\\cygwin\\bin\\sh -c "echo hello"
+ - C:\\tools\\cygwin\\bin\\sh -c "cat run.sh"
+ - C:\\tools\\cygwin\\bin\\sh -c "/c/Users/travis/build/edudant/windows-travis-build/run.sh"
+ - C:\\tools\\cygwin\\bin\\sh -c "make --version"
  - C:\\tools\\cygwin\\bin\\sh /c/Users/travis/build/edudant/windows-travis-build/run.sh
  # - choco install cyg-get
  # - cyg-get make
  # - ls /
  # - C:\\ProgramData\\chocolatey\\bin\\Cygwin.exe
- - ls C:\\tools\\cygwin\\bin
