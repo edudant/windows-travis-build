@@ -1,14 +1,13 @@
 language: cpp
 os: windows
 
-env:
- - MSBUILD_PATH="c:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin"
+# env:
+# - MSBUILD_PATH="c:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin"
  
 before_script:
  - unset -v _JAVA_OPTIONS
  - git config --system core.longpaths true
  - git config --global core.autocrlf false
- # clone from skybber patched
  - git clone --depth 1 https://github.com/skybber/openjdk-build.git
  
 script: 
