@@ -13,5 +13,6 @@ unset -v CC
 unset -v CXX
 cd ./openjdk-build
 export LOG=info
-./makejdk-any-platform.sh --tag jdk-11.0.1+12  --configure-args '-disable-warnings-as-errors --with-jobs=2' --processors 2 jdk11u
+export NUMBER_OF_PROCESSORS=2
+./makejdk-any-platform.sh --tag jdk-11.0.1+12  --configure-args '-disable-warnings-as-errors --disable-hotspot-gtest' jdk11u
 
