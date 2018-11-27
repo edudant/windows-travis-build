@@ -13,5 +13,5 @@ unset -v CC
 unset -v CXX
 cd ./openjdk-build
 export LOG=info
-./makejdk-any-platform.sh --processors 2 jdk11u
+./makejdk-any-platform.sh --tag jdk-11.0.1+12 --processors 2 jdk11u
 
